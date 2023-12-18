@@ -19,6 +19,7 @@ const App = () => {
         return !isAuthenticated ? children : <Navigate to={URLS.Dashboard} />
     };
 
+    // add comment
     return (
         <>
             <BrowserRouter>
