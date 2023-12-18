@@ -16,7 +16,6 @@ const App = () => {
 
     const PublicRouter = ({ children }) => {
         const isAuthenticated = useAuth();
-        console.log('isAuthenticated :>> ', isAuthenticated);
         return !isAuthenticated ? children : <Navigate to={URLS.Dashboard} />
     };
 
